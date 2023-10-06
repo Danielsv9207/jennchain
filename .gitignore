@@ -1,0 +1,7 @@
+# Directorio para datos de la base de datos
+/db_data/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
