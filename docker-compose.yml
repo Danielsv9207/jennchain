@@ -10,17 +10,6 @@ services:
       POSTGRES_DB: jennchain
     ports:
       - "5432:5432"
-    volumes:
-      - ./db_data:/var/lib/postgresql/data
-
-  web:
-    build: .
-    ports:
-      - "8000:8000"
-    depends_on:
-      - db
-    environment:
-      - FLASK_ENV=development
 
 volumes:
   db_data:
